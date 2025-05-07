@@ -45,7 +45,7 @@ const signIn = () => {
           </Text>
 
           <Text className="text-lg font-rubik text-black-200 text-center mt-12">
-            Login to Real Scout with Google
+            Login to Realstate with Google
           </Text>
           
           <TouchableOpacity
