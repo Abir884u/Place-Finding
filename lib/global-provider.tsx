@@ -37,7 +37,7 @@ return (
         isLogged,
         user,
         loading,
-        refetch,
+        refetch
       }}
     >
       {children}
