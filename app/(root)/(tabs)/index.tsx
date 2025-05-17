@@ -1,4 +1,3 @@
-
 import {
   ActivityIndicator,
   FlatList,
@@ -22,7 +21,7 @@ import { useAppwrite } from "@/lib/useAppwrite";
 import { useGlobalContext } from "@/lib/global-provider";
 import { getLatestProperties, getProperties } from "@/lib/appwrite";
 
-const Home = () => {
+export default function Index  ()  {
   const { user } = useGlobalContext();
 
   const params = useLocalSearchParams<{ query?: string; filter?: string }>();
@@ -131,7 +130,7 @@ const Home = () => {
               )}
             </View>
 
-            {/* <Button title="seed" onPress={seed} /> */}
+            
 
             <View className="mt-5">
               <View className="flex flex-row items-center justify-between">
@@ -154,4 +153,3 @@ const Home = () => {
   );
 };
 
-export default Home;
